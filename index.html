@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Shane Lee</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/1422a2faae.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <div class="header">
+        <div>
+            <a class="headerMenuLinks" href="#bodyAboutMe">About</a>
+            <a class="headerMenuLinks" href="#bodyResume">Resume</a>
+            <a class="headerMenuLinks" href="#bodyPortfolio">Portfolio</a>
+            <a class="headerMenuLinks" href="#bodyContact">Contact</a>
+            <a href="https://www.linkedin.com"><i class="fab fa-linkedin smIcons"></i></a>
+            <a href="https://www.twitter.com"><i class="fab fa-twitter-square smIcons"></i></a>
+            <a href="https://www.instagram.com"><i class="fab fa-instagram-square smIcons"></i></a>
+        </div>
+    </div>
+
+    <!-- Body -->
+    <div class="body">
+
+        <!-- Body top -->
+        <div id="bodyTop">
+            <div class="leftBody">
+                <div class="leftBodyText">
+                    <div id="myName">Shane Lee</div>
+                    <div id="myTitle">CPA, CA</div>
+                    <div id="myContact"><i class="fas fa-envelope"></i>: <a
+                            href="mailto:me@shanelee.ca">me@shanelee.ca</a><br></div>
+                    <div id="myContact"><i class="fas fa-phone"></i>: <a href="tel:647-555-5555">647-555-5555</a></div>
+
+                </div>
+            </div>
+            <div class="rightBody">
+                <img id="profileImg" src="img/profile2.jpg" alt="Profile Picture" />
+            </div>
+        </div>
+
+        <!-- About me -->
+        <div id="bodyAboutMe">
+            <div class="title">About Me</div>
+            <div class="aboutMe">
+                I am a Chartered Professional Accountant with an interest in web development. I believe the future of
+                our profession
+                will require us to have a deeper understanding of the technologies available to businesses.
+                Understanding, interpreting,
+                analyzing and presenting data will become a huge part of our every day roles while many of our current
+                day-to-day tasks
+                get automated.
+            </div>
+        </div>
+
+        <!-- Resume -->
+        <div id="bodyResume">
+            <div class="title">Resume Highlights</div>
+            <div class="bodyResumeLeft">
+                <h2>Work Experience</h2>
+                <h3>The Byng Group Ltd., Vaughan, Canada</h3>
+                <i>Vice President of Finance (January 2019 - Present)</br>
+                    Corporate Controller (September 2015 – January 2019)</i>
+                <ul>
+                    <li>Key player in turnaround of business</li>
+                    <li>Implementation of new accounting software (SAGE Intacct) and payroll software (ADP WorkForceNow)
+                    </li>
+                    <li>Bringing transparency into costs and profitability through key financial information from
+                        operational and financial data</li>
+                    <li>Managed 8 direct reports and reported directly to CEO</li>
+                    <li>Liaised between the company and lawyers in all legal matters </li>
+                    <li>Implementation of new accounting workflows to improve efficiencies</li>
+                </ul>
+                <h3>Collins Barrow Toronto LLP, Toronto, Canada</h3>
+                <i>Manager (Aug 2015 – September 2015)</br>
+                    Senior Accountant (Jul 2010 – Dec 2010, Oct 2012 – Aug 2015)</br>
+                    Accountant (Jan 2009 – Jul 2010)</i>
+                <ul>
+                    <li>Lead senior in the audit of a public start-up tech company with market cap of $70M </li>
+                    <li>Lead senior in the audit of an international professional service firm with revenues greater
+                        than $50 million</li>
+                    <li>Lead senior in the audit of hydro-power companies with both active and in-construction power
+                        plants located in Canada and US</li>
+                </ul>
+
+
+            </div>
+            <div class="bodyResumeRight">
+                <h2>Accounting Experience</h2>
+                <div class="tag">Control Implementation</div>
+                <div class="tag">Software Transition</div>
+                <div class="tag">Audit Preparation</div>
+                <div class="tag">Cashflow Management</div>
+                <div class="tag">Accounting Workflow Implementation</div>
+                <div class="tag">Management Reports</div>
+
+                <h2 style="margin-top:20px">Developer Experience</h2>
+                <div class="tag">html</div>
+                <div class="tag">CSS</div>
+                <div class="tag">Javascript</div>
+                <div class="tag">SQL</div>
+                <div class="tag">Trello</div>
+                <div class="tag">Git</div>
+
+                <h2 style="margin-top:20px">Education</h2>
+                Chartered Accountant of Canada <br>
+                Honours BBA, Wilfrid Laurier University
+            </div>
+            <div id="downloadResume">
+                <form method="get" action="resume.pdf">
+                    <button type="submit" style="font-weight: bold">Download Full Resume</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Portfolio -->
+        <div id="bodyPortfolio">
+            <div class="title">Web Development Portfolio</div>
+
+            <!-- Modal -->
+            <div class="row">
+                <div class="column" style="margin-left: 50px;">
+                    <img src="img/template1.png" onclick="openModal();currentSlide(1)" class="hover-shadow"
+                        style="width:200px;">
+                </div>
+                <div class="column">
+                    <img src="img/template2.png" onclick="openModal();currentSlide(2)" class="hover-shadow"
+                        style="width:200px;">
+                </div>
+                <div class="column">
+                    <img src="img/template3.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow"
+                        style="width:200px;">
+                </div>
+            </div>
+
+            <!-- The Modal/Lightbox -->
+            <div id="myModal" class="modal">
+                <span class="close cursor" onclick="closeModal()">&times;</span>
+                <div class="modal-content">
+
+                    <div class="mySlides">
+                        <div class="numbertext">1 / 3</div>
+                        <img class="sample" src="img/template1.png" style="width:100%" alt="Random image from Google 1">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">2 / 3</div>
+                        <img class="sample" src="img/template2.png" style="width:100%" alt="Random image from Google 2">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">3 / 3</div>
+                        <img class="sample" src="img/template3.jpg" style="width:100%" alt="Random image from Google 3">
+                    </div>
+
+                    <!-- Next/previous controls -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                    <!-- Caption text -->
+                    <div class="caption-container">
+                        <p id="caption"></p>
+                    </div>
+
+                </div>
+            </div>
+            <!-- Contact form -->
+            <div id="bodyContact">
+                <div class="title">Contact</div>
+                <form id="contactForm" action="#" onsubmit="errMsg(); return false">
+                    Name:</br>
+                    <input type="text" id="name" style="width: 500px;"></br></br>
+                    Enter Email Address:</br>
+                    <input type="email" id="myemail" style="width: 500px;"></br></br>
+                    Message:</br>
+                    <textarea rows="5" style="width: 500px;" id="comments"></textarea></br></br>
+                    <div id="errorMessage"></div>
+                    <input type="submit" value="Send">
+                    <input type="reset" value="Reset">
+                </form>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            © Copyright 2020 Shane Lee
+        </div>
+
+        <script>
+            // Open the Modal
+            function openModal() {
+                document.getElementById("myModal").style.display = "block";
+            }
+
+            // Close the Modal
+            function closeModal() {
+                document.getElementById("myModal").style.display = "none";
+            }
+
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            // Next/previous controls
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            // Thumbnail image controls
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("sample");
+                var captionText = document.getElementById("caption");
+                if (n > slides.length) { slideIndex = 1 }
+                if (n < 1) { slideIndex = slides.length }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+                captionText.innerHTML = dots[slideIndex - 1].alt;
+            }
+
+            function errMsg(){
+                var msg = "";
+                
+                if (document.getElementById("name").value == "") {
+                    msg = "Please enter your name.</br>";
+                }
+                if (document.getElementById("myemail").value == "") {
+                    msg = msg + "Please enter your email address.</br>";
+                }
+                if (document.getElementById("comments").value == "" ) {
+                    msg = msg + "Please enter comments.";
+                }
+                
+                if (msg == "") {
+                    msg = "Message sent!";
+                    document.getElementById("contactForm").reset();
+                }
+                
+                document.getElementById("errorMessage").innerHTML = msg;
+                
+            }
+
+        </script>
+
+</body>
+
+
+</html>
